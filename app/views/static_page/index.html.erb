@@ -1,0 +1,17 @@
+<h1 class='jf'> You can find all gossips in this page ! </h1>
+
+<% @gossipall.each.with_index(1) do |gossip,index|%> 
+
+  
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Gossip numero <%= index %></h5>
+    <p class="card-text"><%= gossip.author %> : <%= gossip.content 
+    %></p></p>
+    <a href="/gossip/<%= index %>" class="btn btn-primary">Show me more Dude !</a>
+  </div>
+</div>
+<% end %>
+
+	
+  

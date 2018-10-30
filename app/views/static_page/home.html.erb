@@ -1,0 +1,12 @@
+<p>Welcome <%= params[:name]%></p>
+
+<h1> You can find all gossips in this page ! </h1>
+
+<p>All gossips are here :
+	<% @gossipall.each do |gossip|%>
+  <p><%= gossip.author %> : <%= gossip.content%></p>
+<% end %>
+
+
+
+
